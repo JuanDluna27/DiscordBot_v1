@@ -21,7 +21,7 @@ function gotMessage(message) {
       be carefull of who & what replay
   */
     if (
-      message.content === "Hola"){
+      message.content === "Hola" || "hola"){
         let randomIndex = Math.floor(Math.random() * MESSAGE_RESPONSE.length);
         message.channel.send(MESSAGE_RESPONSE[randomIndex]);
     }
